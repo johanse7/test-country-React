@@ -38,18 +38,42 @@
 }
 
 .countries {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
+  padding: 0.5em 0;
+  grid-template-columns: minmax(auto, 100%);
+  display: grid;
   justify-content: center;
-  align-items: flex-start;
-  margin: 2em;
 }
 
 .countries div.item {
   display: grid;
-  grid-auto-columns: 100px;
-  grid-auto-flow: column;
-  justify-content: space-around;
-  text-align: left;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.countries div.item .card {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.7em;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: ease box-shadow 0.3s;
+  width: 200px;
+  gap: 10px;
+}
+
+.countries div.item .card img {
+  width: 200px;
+  height: auto;
+  border: 1px solid lightgray;
+}
+.countries div.item .card .details {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.countries div.item .card .details strong {
+  margin-right: 5px;
 }
