@@ -46,7 +46,7 @@
   margin: 2em;
 }
 
-.countries div {
+.countries div.item {
   display: grid;
   grid-auto-columns: 100px;
   grid-auto-flow: column;
