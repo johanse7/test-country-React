@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.countries {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2em;
+}
+
+.countries div {
+  display: grid;
+  grid-auto-columns: 100px;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  text-align: left;
+}
